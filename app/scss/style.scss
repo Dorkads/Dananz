@@ -60,6 +60,12 @@ $ligrey33: #333333;
   padding: 14px 32px;
 }
 
+%forimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
 .header {
   padding: 40px 0;
 
@@ -163,6 +169,7 @@ $ligrey33: #333333;
 
     text-align: center;
     color: #ffffff;
+    background-color: #2c3878;
 
     dl {
       padding: 40px 48px;
@@ -735,7 +742,7 @@ $ligrey33: #333333;
 .achievement {
 
   height: auto;
-  padding: 50px 0;
+  padding: 40px 0;
 
   &__tittleh6 {
     @extend %h6;
@@ -800,6 +807,18 @@ $ligrey33: #333333;
 
   &__tittleh6 {
     @extend %h6;
+    position: relative;
+    &::after {
+      position: absolute;
+      left: 8%;
+      bottom: 50%;
+      z-index: 10;
+
+      content: "";
+      width: 507px;
+      border: 1px solid #000000;
+    }
+
   }
 
   &__tittleh2 {
@@ -854,5 +873,203 @@ $ligrey33: #333333;
     height: 116px;
 
     @extend %pgreyl;
+  }
+}
+
+.servicesMain {
+
+  padding: 40px 0;
+  height: auto;
+
+  &__home {
+    text-align: center;
+  }
+
+  &__tittle {
+    @extend %h1;
+    margin: 0 auto;
+    font-size: 56px;
+    line-height: 78px;
+    color: #000000;
+  }
+  &__text {
+    @extend %tittle400;
+    width: 518px;
+    height: 87px;
+    margin: 36px auto 57px auto;
+  }
+
+  &__home-img {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    max-width: 1200px;
+    height: 513px;
+    margin: 0 auto;
+  }
+}
+
+.archievement {
+
+  padding: 40px 0;
+
+  &__tittle {
+    @extend %h6;
+    margin-bottom: 40px;
+    position: relative;
+    &::after {
+      position: absolute;
+      left: 11%;
+      bottom: 50%;
+      z-index: 10;
+
+      content: "";
+      width: 464px;
+      border: 1px solid #000000;
+    }
+
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+  }
+
+  &__item-img {
+    width: 746px;
+    height: 365px;
+    @extend %forimg;
+
+    transition: all .7s;
+
+    &:hover {
+      transform: scale(.9);
+    }
+  }
+  &__item__tittles {
+    margin-left: 120px;
+
+    width: 334px;
+    height: 150px;
+  }
+
+  &__item-tittleh6 {
+    @extend %h6;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 600
+  }
+
+  &__item-text {
+    @extend %pgreyl;
+    margin-top: 20px;
+  }
+}
+
+.teams {
+
+  padding: 40px 0;
+  height: auto;
+
+  &__tittle {
+    @extend %h1;
+    text-align: center;
+    color: #000000;
+    font-size: 56px;
+    line-height: 78px;
+  }
+
+  &__text {
+    @extend %tittle400;
+    width: 518px;
+    height: 87px;
+    margin: 36px auto 57px auto;
+    text-align: center;
+  }
+
+  &__img {
+    @extend %forimg;
+    max-width: 1200px;
+    height: 513px;
+    margin: 0 auto;
+  }
+}
+
+.designer {
+
+  padding: 40px 0;
+  height: auto;
+
+  &__tittleh6 {
+    @extend %h6;
+    position: relative;
+    &::after {
+      position: absolute;
+      left: 8%;
+      bottom: 50%;
+      z-index: 10;
+
+      content: "";
+      width: 507px;
+      border: 1px solid #000000;
+    }
+  }
+
+  &__tittleh2 {
+    @extend %h2;
+    margin: 20px 0 24px 0;
+  }
+
+  &__text {
+    @extend %pgreyl;
+    width: 471px;
+    height: 87px;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 24px;
+
+    padding: 40px 0;
+  }
+
+  &__item {
+    position: relative;
+    width: 282px;
+    height: 400px;
+
+    background-color: #2C3878;
+  }
+
+  &__info {
+    width: 258px;
+    height: 96px;
+
+    background-color: #FFFFFF;
+
+    padding: 12px;
+
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    z-index: 10;
+  }
+
+  &__item-img {
+    width: 282px;
+    height: 386px;
+    @extend %forimg;
+  }
+
+  &__item__tittle {
+    @extend %h3;
+  }
+
+  &__item__text {
+    @extend %pgreyl
   }
 }
