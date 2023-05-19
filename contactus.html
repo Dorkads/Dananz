@@ -6,7 +6,7 @@
     <title>Dananz</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link type="image/x-icon" href="images/logo/Dananz.svg" rel="Dananz icon">
+    <link type="image/x-icon" href="images/logo/Dananz.svg" rel="Dananz icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -30,13 +30,17 @@
                   <a class="header__inner-link" href="index.html">Home</a>
                 </li>
                 <li class="header__inner-list">
-                  <a class="header__inner-link active" href="about.html">About Us</a>
+                  <a class="header__inner-link" href="about.html">About Us</a>
                 </li>
                 <li class="header__inner-list">
-                  <a class="header__inner-link" href="services.html">Services</a>
+                  <a class="header__inner-link" href="services.html"
+                    >Services</a
+                  >
                 </li>
                 <li class="header__inner-list">
-                  <a class="header__inner-link" href="our teams.html">Our Teams</a>
+                  <a class="header__inner-link" href="our teams.html"
+                    >Our Teams</a
+                  >
                 </li>
                 <li class="header__inner-list">
                   <a class="header__inner-link contactus" href="contactus.html"
@@ -50,87 +54,99 @@
       </header>
 
       <main class="main">
-
-        <section class="abus">
+        <section class="conUs">
           <div class="container">
-            <div class="abus__inner">
-              <div class="abus__tittles">
-                <h1 class="abus__tittle">
-                  About
-                </h1>
-                <p class="abus__text">
-                  It is a long established fact that a reader will be distracted by the readable content of a page when
-                  looking at its layout.
+            <div class="conUs__inner">
+              <div class="conUs__tittles">
+                <h1 class="conUs__tittle">Contact Us</h1>
+                <p class="conUs__text">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
                 </p>
               </div>
-              <img class="abus__image" src="images/about/about%20sec/aboutimg.jpg" alt="our team">
+
+              <form class="conUs__form">
+                <div class="conUs__form__co">
+                  <div class="conUs__form__cont">
+                    <label for="fname">First Name</label>
+                    <input id="fname" type="text" placeholder="First Name" />
+                  </div>
+                  <div class="conUs__form__cont">
+                    <label for="lname">Last Name</label>
+                    <input id="lname" type="text" placeholder="Last Name" />
+                  </div>
+                </div>
+
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Email" />
+
+                <label for="number">Phone Number</label>
+                <input id="number" type="tel" placeholder="First Name" />
+
+                <label for="text">Message</label>
+                <input id="text" type="text" placeholder="Your Message" />
+
+                <button type="submit" class="conUs__form-btn">
+                  Send Massage
+                </button>
+              </form>
             </div>
           </div>
         </section>
 
-        <section class="achievement">
+        <section class="location">
           <div class="container">
-            <div class="achievement__inner">
-              <h6 class="achievement__tittleh6">
-                ACHIEVEMENT
-              </h6>
-              <h2 class="achievement__tittleh2">
-                interior customization with Danaanz, best quality with professional workers
-              </h2>
-              <div class="achievement__main">
-                <img class="achievement__imgage" src="images/about/about%20sec/achievement.jpg" alt="image">
-                <div class="achievement__total">
-                  <dl>
-                    <dt>350+</dt>
-                    <dd>Project Completed</dd>
-
-                    <dt>23+</dt>
-                    <dd>Professional Teams</dd>
-
-                    <dt>15+</dt>
-                    <dd>Years Experience</dd>
-                  </dl>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="choose">
-          <div class="container">
-            <div class="choose__inner">
-              <h6 class="choose__tittleh6">
-                SERVICE
-              </h6>
-              <h2 class="choose__tittleh2">
-                Why Choose Us
-              </h2>
-              <p class="choose__text">
-                Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.
-              </p>
-              <div class="choose__items">
-
-                <div class="choose__item">
-                  <img class="choose__item-img" src="https://placehold.co/63x63" alt="avatar">
-                  <h3 class="choose__item-tittle">High Quality</h3>
-                  <p class="choose__itemtext">Customize your interior design into a dream place with the best designers
-                    and quality furniture. We try our best to fulfill your expectations.</p>
+            <div class="location__inner">
+              <h6 class="location__item__tittle6">Loaction</h6>
+              <div class="location__items">
+                <div class="location__item-adress">
+                  <h2 class="location__item__tittle2">Visit Our Stores</h2>
+                  <p class="location__item__text">
+                    Find us at these locations.
+                  </p>
+                  <h3 class="location__item__tittle3-adress">Email</h3>
+                  <p class="location__item__text">dananz@gmail.com</p>
+                  <h3 class="location__item__tittle3-adress">Phone</h3>
+                  <p class="location__item__text">+62 815 002 1000</p>
                 </div>
 
-                <div class="choose__item">
-                  <img class="choose__item-img" src="https://placehold.co/63x63" alt="avatar">
-                  <h3 class="choose__item-tittle">Professional Designer</h3>
-                  <p class="choose__itemtext">Customize your interior design into a dream place with the best designers
-                    and quality furniture. We try our best to fulfill your expectations.</p>
-                </div>
+                <div class="location__item-city">
+                  <div class="location__item__column">
+                    <h3 class="location__item__tittle3">Jakarta</h3>
+                    <p class="location__item__text-city">
+                      Customize your interior design into a dream place with the
+                      best designers and quality furniture. We try our best to
+                      fulfill your expectations.
+                    </p>
+                  </div>
 
-                <div class="choose__item">
-                  <img class="choose__item-img" src="https://placehold.co/63x63" alt="avatar">
-                  <h3 class="choose__item-tittle">The Best Services</h3>
-                  <p class="choose__itemtext">Customize your interior design into a dream place with the best designers
-                    and quality furniture. We try our best to fulfill your expectations.</p>
-                </div>
+                  <div class="location__item__column">
+                    <h3 class="location__item__tittle3">Surakarta</h3>
+                    <p class="location__item__text-city">
+                      Customize your interior design into a dream place with the
+                      best designers and quality furniture. We try our best to
+                      fulfill your expectations.
+                    </p>
+                  </div>
 
+                  <div class="location__item__column">
+                    <h3 class="location__item__tittle3">Yogyakarta</h3>
+                    <p class="location__item__text-city">
+                      Customize your interior design into a dream place with the
+                      best designers and quality furniture. We try our best to
+                      fulfill your expectations.
+                    </p>
+                  </div>
+
+                  <div class="location__item__column">
+                    <h3 class="location__item__tittle3">Bandung</h3>
+                    <p class="location__item__text-city">
+                      Customize your interior design into a dream place with the
+                      best designers and quality furniture. We try our best to
+                      fulfill your expectations.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -149,7 +165,7 @@
                   interior
                 </p>
                 <p class="contact__link">
-                  <a href="contactus.html" class="contact__btn">Contact Us</a>
+                  <a href="" class="contact__btn">Contact Us</a>
                 </p>
               </div>
             </div>
