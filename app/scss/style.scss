@@ -219,14 +219,16 @@ $ligrey33: #333333;
     line-height: 28px;
   }
 
+  &__link {
+    margin-top: 35px;
+  }
+
   &__btn {
     border: none;
     background-color: #ffffff;
     font-weight: 500;
     font-size: 14px;
     padding: 14px 32px;
-    cursor: pointer;
-    margin-top: 35px;
   }
 }
 
@@ -1070,6 +1072,151 @@ $ligrey33: #333333;
   }
 
   &__item__text {
-    @extend %pgreyl
+    @extend %pgreyl;
+  }
+}
+
+.conUs {
+
+  padding: 40px 0;
+  height: auto;
+
+  &__tittles {
+    text-align: center;
+  }
+
+  &__tittle {
+    @extend %h1;
+    color: #000000;
+    font-size: 56px;
+    line-height: 78px;
+  }
+
+  &__text {
+    @extend %tittle400;
+    width: 518px;
+    height: 87px;
+    margin: 40px auto 50px auto;
+  }
+
+  &__form {
+    margin: 0 auto;
+    max-width: 840px;
+  }
+
+  &__form__co {
+    display: flex;
+    column-gap: 14px;
+  }
+
+  input[id='fname'], input[id='lname'] {
+
+    display: block;
+    width: 413px;
+    height: 62px;
+    padding: 18px 32px;
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  input[id='email'] {
+    width: 840px;
+    height: 62px;
+    padding: 18px 32px;
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  input[id='number'] {
+    width: 840px;
+    height: 62px;
+    padding: 18px 32px;
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  input[id='text'] {
+    width: 840px;
+    height: 178px;
+    padding: 20px 30px;
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  &__form-btn {
+    display: flex;
+    margin: 0 auto;
+
+    @extend %bluebtn;
+    border: none;
+    cursor: pointer;
+
+    margin-top: 20px;
+  }
+}
+
+.location {
+
+  padding: 40px 0;
+  height:  auto;
+
+  &__item__tittle6 {
+    @extend %h6;
+    margin-bottom: 20px;
+    position: relative;
+    &::after {
+      position: absolute;
+      left: 8%;
+      bottom: 50%;
+      z-index: 10;
+
+      content: "";
+      width: 510px;
+      border: 1px solid #000000;
+    }
+  }
+
+  &__item__tittle2 {
+    @extend %h2;
+  }
+
+  &__item__tittle3 {
+    @extend %h3;
+  }
+
+  &__item__tittle3-adress {
+    margin-top: 40px;
+  }
+
+  &__item__text {
+    @extend %pgreyl;
+    width: 334px;
+
+    margin-top: 10px;
+  }
+
+  &__item__text-city {
+    @extend %pgreyl;
+    width: 334px;
+    height: 116px;
+
+    margin-top: 30px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 193px;
+  }
+
+  &__item-city {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 60px;
+    row-gap: 40px;
   }
 }
